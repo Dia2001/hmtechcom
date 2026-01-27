@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Công ty HM TechCom</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+    body{color:#333;line-height:1.6;background:#f4f7fb}
+    header{background:linear-gradient(90deg,#2563eb,#0ea5e9);color:#fff}
+    .container{max-width:1100px;margin:auto;padding:0 20px}
+    header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:16px 20px}
+    nav a{color:#fff;margin-left:16px;text-decoration:none;font-weight:500}
+    nav a:hover{text-decoration:underline}
+
+    .hero{padding:80px 20px;background:linear-gradient(135deg,#e0f2fe,#f8fafc)}
+    .hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .hero-text h2{font-size:36px;margin-bottom:16px;color:#1e3a8a}
+    .hero-text p{font-size:18px;margin-bottom:24px;color:#334155}
+    .btn{display:inline-block;padding:12px 26px;background:#2563eb;color:#fff;border-radius:30px;text-decoration:none;font-weight:600;transition:0.3s}
+    .btn:hover{background:#1d4ed8;transform:translateY(-2px)}
+    .hero-image img{width:100%;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.15)}
+
+    .section{padding:70px 20px}
+    .section h3{text-align:center;font-size:28px;margin-bottom:40px;color:#1e293b}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+    .card{background:#fff;border-radius:16px;padding:28px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,0.08);transition:0.3s}
+    .card:hover{transform:translateY(-6px)}
+    .card h4{color:#2563eb;margin-bottom:12px}
+
+    .info{max-width:800px;margin:auto;font-size:16px}
+    .info p{margin-bottom:10px}
+
+    footer{background:#0f172a;color:#cbd5f5;padding:30px 20px;text-align:center}
+    footer p{font-size:14px;margin-bottom:6px}
+
+    @media(max-width:768px){
+      .hero-inner{grid-template-columns:1fr}
+      .hero-text h2{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>HM TechCom</h1>
+    <nav>
+      <a href="#about">Giới thiệu</a>
+      <a href="#services">Dịch vụ</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h2>Công ty Công nghệ HM TechCom</h2>
+      <p>Giải pháp công nghệ, phần mềm và dịch vụ số giúp cá nhân và doanh nghiệp phát triển bền vững.</p>
+      <a href="#contact" class="btn">Liên hệ ngay</a>
+    </div>
+    <div class="hero-image">
+      <!-- 👉 Thay ảnh công ty của bạn vào đây -->
+      <img src="logo.png" alt="Ảnh công ty HM TechCom">
+    </div>
+  </div>
+</section>
+<section id="about" class="section">
+  <div class="container">
+    <h3>Giới thiệu về chúng tôi</h3>
+    <div class="info">
+      <p><strong>Tên pháp nhân:</strong> Nguyen Anh Tuan</p>
+      <p><strong>Địa chỉ:</strong> Thôn Đông Phú, Xã Vĩnh Thanh, Tỉnh Phú Thọ, Việt Nam</p>
+      <p><strong>Quy mô:</strong> 1 – 10 nhân sự</p>
+    </div>
+  </div>
+</section>
+<section id="services" class="section" style="background:#f9fafb">
+  <div class="container">
+    <h3>Dịch vụ</h3>
+    <div class="services">
+      <div class="card"><h4>Phát triển ứng dụng</h4><p>Ứng dụng Android và web theo yêu cầu.</p></div>
+      <div class="card"><h4>Giải pháp phần mềm</h4><p>Giải pháp phần mềm cho doanh nghiệp nhỏ.</p></div>
+      <div class="card"><h4>Hỗ trợ kỹ thuật</h4><p>Tư vấn và hỗ trợ kỹ thuật.</p></div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section">
+  <div class="container">
+    <h3>Thông tin liên hệ</h3>
+    <div class="info">
+      <p><strong>Người đại diện:</strong> Nguyễn Anh Tuấn</p>
+      <p><strong>Số điện thoại:</strong> +84 974 504 544</p>
+      <p><strong>Email:</strong> hmtechcom2025@gmail.com</p>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>© 2025 HM TechCom. All rights reserved.</p>
+</footer>
+</body>
+</html>
